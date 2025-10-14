@@ -1,0 +1,33 @@
+<doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewpoint" content="width=device-width,initial-scale=1"/>
+    <title>Staff Login - HBATS</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <h1>Staff Login</h1>
+            <p class="subtitle">Hospoital Bed Availability & Tracking System</p>
+            <form method="post" action="login.php" class="login-form">
+                <label for="username"> Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            <div class="form-options">
+                <label>
+                    <input type="checkbox" name="remenber"> Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            </form>
+<p class="footer-link">
+    <a href="index.html">Visitor? Find a patient -></a>
+</p>
+        </div>
+    </div>
+</body>
+</html>
