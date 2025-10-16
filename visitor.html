@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visitor Lookup - HBATS</title>
+        <link rel="stylesheet" href="visitor.css">
+    </head>
+    <body class="centered-page visitor-page">
+        
+        <div class="Lookup-wrapper">
+            <section class="lookup-card">
+                <h2>Visitor Lookup</h2>
+                <p class="subtitle">Find patient room using visitor passcode</p>
+                <form method="POST" action="#">
+               <div class="form-group">
+                <label >Patient Name *</label>
+                <input type="text" name="patient_name" placeholder="Enter patient's full name" required>
+               </div>
+               <div class="form-group">
+                <label>Visitor Passcode *</label>
+                <input type="text" name="passcode" placeholder="Enter passcode" required>
+               </div>
+               <button type="submit" class="button-find-room">Find Room</button>
+               </form>
+               <!--Patient found section-->
+               <div class="lookup-result">
+                <h3>Patient Found</h3>
+                <div class="result-grid">
+                    <p><strong>Patient:</strong></p>
+                    <p><strong>Room:</strong></p>
+                    <p><strong>Ward:</strong></p>
+                    <p><strong>Visiting Hours:</strong></p>
+                    
+                </div>
+               </div>
+               <!--Error Message-->
+               <div class="error-box">
+                <p class="error">No patient found with that name and passcode.</p>
+               </div>
+               <div class="staff-link">
+                <a href="login.html">Staff Login -></a>
+               </div>
+            </section>
+        </div>
+    </body>
+</html>

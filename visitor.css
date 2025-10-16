@@ -1,0 +1,109 @@
+
+.centered-page{
+    background:#f3f4f6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lookup-card{
+    
+        background:#fff;
+        border:1px solid #ddd;
+        border-radius:10px;
+        padding:5rem;
+        box-shadow:0 6px 16px rdgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+.lookup-card h2{
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+    color:#111;
+
+}
+.subtitle{
+    color:#666;
+    font-size:0.9rem;
+    margin-bottom: 1.5rem;
+
+}
+/* Form */
+.form-group{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form-group label{
+    font-weight: 300;
+    margin-bottom: 0.4rem;
+    display: block;
+    text-align: left;
+}
+input[type="text"]{
+   
+    padding:0.75rem;
+    border:1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+input[type="text"]:focus{
+    border-color: #000;
+    outline:none;
+}
+/* Button */
+.button-find-room{
+    background: #000;
+    color:#fff;
+    border: none;
+    border-radius: 6px;
+    padding:0.8rem;
+   
+    cursor:pointer;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.button-find-room:hover{
+background: #333;
+}
+/*result box*/
+.lookup-result{
+    display:none;
+    background: #e7f9ed;
+    border:1px solid #86efac;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+.lookup-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:0.5rem;
+}
+/* error box */
+.error-box{
+    display:none;
+    background:#fca5a5;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+
+}
+.error{
+    color:#b91c1c;
+    font-weight: 600;
+    font-size:0.9rem;
+
+}
+/* staff login link */
+.staff-link{
+    margin-top:1.5rem;
+}
+.staff-link a{
+    text-decoration: none;
+    color:#555;
+    font-size: 0.9rem;
+}
+.staff-link a:hover{
+    text-decoration: underline;
+}
