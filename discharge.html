@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patient Discharge - HBATS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Header-->
+        <header class="toolbar">
+            <div>
+                <h2>Patient Discharge Form</h2>
+                <p class="subtitle">Discharge patient and update bed avialability</p>
+            </div>
+            <div class="action-buttons">
+                <a href="dashboard.html" class="button secondary small"> Back to Dashboard</a>
+                <a href="login.html" class="button secondary small">Logout</a>
+            </div>
+        </header>
+<!--Main-->
+<main class="container">
+    <!--Step Indicator-->
+    <div class="step-indicator">
+        <div class="step completed">
+        <div class="circle">&#10003;</div>
+         Select Patient
+        </div>
+        <div class="line"></div>
+        <div class="step active">
+            <div class="circle">2</div>
+             Confirm Discharge
+        </div>
+        <div class="line"></div>
+        <div class="step">
+            <div class="circle">3</div>
+            Update system
+        </div>
+    </div>
+    <!--Search -->
+    <section class="card">
+        <h3>Step:1 Find patient to Discharge</h3>
+        <div class="form-group">
+            
+        <input type="text" placeholder="Search by patient name or bed number" required>
+        <button class="btn">Search</button>
+        </div>
+    </section>
+    <!--Hidden Deatils-->
+    <section class="card hidden" id="discharge-details">
+        <h3>Step 2: Confirm Discharge</h3>
+        <div class="info-box">
+            <h4>Selected Patient</h4>
+            <p><strong>Name:</strong>John</p>
+            <p><strong>Room:</strong>ICU-002</p>
+            <p><strong>Ward:</strong>ICU</p>
+
+        </div>
+        <h4>Discharge Information</h4>
+        <div class="form-group">
+            <label>Discharge Date & Time</label>
+            <input type="datetime-local">
+
+        </div>
+        <div class="form-group">
+            <label>Discharge Notes</label>
+            <textarea placeholder="optional"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Discharge Type</label>
+            <select>
+                <option>Home</option>
+                <option>Transfer to Another Facility</option>
+                <option>Against Medical Advice</option>
+                <option>Deceased</option>
+            </select>
+        </div>
+        <div class="warning-box">
+        <p>Confirm the patient is ready for discahrge.? This action cannot be undone.</p>
+        <label><input type="checkbox">I Confirm Discharge </label>
+        </div>
+        <div class="form-actions">
+            <button class="btn danger">Complete Discharge</button>
+            <button class="btn">Cancel</button>
+        </div>
+    </section>
+</main>
+    </body>
+    </html>
