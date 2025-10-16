@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale"/>
+        <title>DashBoard- HBATS</title>
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+    <body>
+        <!--Navigation-->
+      <header class="toolbar">
+        <div>
+            <h2>HBATS - Staff Dashboard</h2>
+            <p class="subtitle">Real-time hospital bed availability & Status</p>
+        </div>
+        <div class="action-buttons">
+            <a href="admit.html" class="button small">Admit Patient</a>
+            <a href="passcode.html" class="button secondary small">Generate Passcode</a>
+            <a href="login.html" class="button secondary small">Logout</a>
+        </div>
+      </header>
+
+      <!--Content-->
+      <main class="container">
+        <div class="stats-wrapper">
+            <div class="stat-box">
+                <h3>48</h3>
+                <p>Total Beds</p>
+            </div>
+            <div class="stat-box available">
+                <h3>18</h3>
+                <p>Avialable</p>
+            </div>
+            <div class="stat-box occupied">
+                <h3>30</h3>
+                <p>Occupied</p>
+            </div>
+            <div class="stat-box rate">
+                <h3>62.5%</h3>
+                <p>Occupancy Rate</p>
+            </div>
+        </div>
+        <!--Filters-->
+        <div class="filter-panel">
+           <div>
+            <label>Filter by Ward</label>
+                    <select >
+                        <options value="all">All Wards</options>
+                        <option value="ICU"> ICU</option>
+                        <option value="General">General</option>
+                        <option value="Pediatric">Pediatric</option>
+                        <option value="Emergency">Emergency</option>
+                    </select>
+           </div>
+                    <div>
+                        <label>Filter by status</label>
+                    <select >
+                        <option value="all">All Statuses</option>
+                        <option value="available">Available</option>
+                        <option value="occupied">Occupied</option>
+                    </select>
+                </div>
+                    <div>
+                        <label>Search</label>
+                    <input type="text" id="searchbox" placeholder="Search by bed or patient">
+                    </div>
+        </div>
+        <!--Ward Display-->
+        <section class="ward-section" >
+            <h3>General (6 beds)</h3>
+            <div class="bed-grid">
+                <div class="bed-occupied">
+                    <p class="bed-id">Gen-001</p>
+                    <p class="bed-data"> Harman </p>
+                    <p class="status-red">Occupied</p>
+                </div>
+           
+                <div class="bed-available">
+                <p class="bed-id">Gen-002</p>
+                <p class="bed-data"></p>
+                <p class="status-green">Available</p>
+            </div>
+            <div class="bed-occupied">
+                <p class="bed-id">Gen-003</p>
+                <p class="bed-data"> Love </p>
+                <p class="status-red">Occupied</p>
+            </div>
+            <div class="bed-available">
+                <p class="bed-id">Gen-004</p>
+                <p class="bed-data"></p>
+                <p class="status-green">Available</p>
+            </div>
+            <div class="bed-occupied">
+                <p class="bed-id">Gen-005</p>
+                <p class="bed-data"> Lizza </p>
+                <p class="status-red">Occupied</p>
+            </div>
+            <div class="bed-available">
+                <p class="bed-id">Gen-006</p>
+                <p class="bed-data"></p>
+                <p class="status-green">Available</p>
+            </div>
+        </div>
+        <div class="show-link"><a href="#">show all 6 beds -></a></div>
+    </section>
+    <section class="ward-section" >
+        <h3>ICU Ward (6 beds)</h3>
+        <div class="bed-grid">
+            <div class="bed-occupied">
+                <p class="bed-id">ICU-001</p>
+                <p class="bed-data"> Harman</p>
+                <p class="status-red">Occupied</p>
+            </div>
+       
+        <div class="bed-available">
+            <p class="bed-id">ICU-002</p>
+            <p class="bed-data"></p>
+                <p class="status-green">Available</p>
+        </div>
+        <div class="bed-occupied">
+            <p class="bed-id">ICU-003</p>
+            <p class="bed-data"> Love </p>
+            <p class="status-red">Occupied</p>
+        </div>
+        <div class="bed-available">
+            <p class="bed-id">ICU-004</p>
+            <p class="bed-data"></p>
+                <p class="status-green">Available</p>
+        </div>
+        <div class="bed-occupied">
+            <p class="bed-id">ICU-005</p>
+            <p class="bed-data"> John</p>
+            <p class="status-red">Occupied</p>
+        </div>
+        <div class="bed-available">
+            <p class="bed-id">ICU-006</p>
+            <p class="bed-data"></p>
+                <p class="status-green">Available</p>
+        </div>
+        <div class="bed-occupied">
+            <p class="bed-id">ICU-007</p>
+            <p class="bed-data"> Jazz </p>
+            <p class="status-red">Occupied</p>
+        </div>
+        <div class="bed-available">
+            <p class="bed-id">ICU-008</p>
+            <p class="bed-data"></p>
+                <p class="status-green">Available</p>
+        </div>
+    </div>
+    <div class="show-link"><a href="#">show all 8 beds -></a></div>
+</section>
+      </main>
+    </body>
+</html>

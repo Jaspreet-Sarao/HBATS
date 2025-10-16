@@ -1,0 +1,137 @@
+.toolbar{
+    background: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.subtitle{
+    font-size: 0.85rem;
+    color: #666;
+
+}
+.action-buttons{
+    display: flex;
+    gap: 0.5rem;
+
+}
+.button.small{
+    padding: 0.5rem 0.8rem;
+    font-size:0.8rem;
+    border-radius: 5px;
+    color:#fff;
+    text-decoration: none;
+    background: #333;
+}
+.button.secondary{
+    background: #eee;
+    color:#333;
+}
+.stats-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+
+}
+.stat-box{
+    flex:1;
+    min-width: 180px;
+    background: #fff;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1rem;
+}
+.stat-box.available{
+    background: #e7f9ed;
+    border-color: #86efac;
+}
+.stat-box.occupied{
+    background: #fee2e2;
+    border-color: #fca5a5;
+}
+.stat-box.rate{
+    background: #ebf3ff;
+    border-color: #93c5fd;
+}
+.filter-panel{ 
+    background: white;
+    padding: 1rem;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    display:flex;
+    justify-content: space-between;
+    gap:1rem;
+    margin-bottom: 1.5rem;
+}
+
+.filter-panel select, .filter-panel input{
+padding: 0.5rem;
+border:1px solid #ddd;
+border-radius: 6px;
+flex:1;
+
+}
+.ward-section{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+.ward-section h3{
+    margin-bottom: 1rem;
+}
+.bed-grid{
+    display: grid;
+    gap:0.75rem;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top:1rem;
+}
+.bed {
+    padding: 0.75rem;
+    border-radius:8px;
+    text-align: center;
+    border: 2px solid transparent;
+    padding: 0.75rem;
+}
+.bed-available{
+    background: #e7f9ed;
+    border-color:#86efac;
+
+}
+.bed-occupied {
+    background: #fee2e2;
+    border-color:#fca5a5;
+}
+.bed-id{
+    font-weight: bold;
+    
+}
+.bed-data{
+    font-size: 0.85 rem;
+    color: #555;
+}
+.status-green{
+    color:#15803d;
+    font-weight: 500;
+}
+.status-red{
+    color:#b91c1c;
+    font-weight: 500;
+}
+.show-link{
+    text-align: center;
+    margin-top: 1rem;
+}
+.show-link a{
+    color:#333;
+    text-decoration: none;
+}
+.show-link a:hover{
+    text-decoration: underline;
+}
