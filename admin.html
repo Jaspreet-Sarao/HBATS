@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Ward Management</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="admin-page">
+        <header class="toolbar">
+            <h2>Admin Ward Management</h2>
+            <p class="subtitle"> Create and manage wards and bed configurations</p>
+
+        </header>
+        <!--Content-->
+      <main class="container">
+        <div class="stats-wrapper">
+            <div class="stat-box">
+                <h3>48</h3>
+                <p>Total Beds</p>
+            </div>
+            <div class="stat-box available">
+                <h3>18</h3>
+                <p>Avialable</p>
+            </div>
+            <div class="stat-box occupied">
+                <h3>30</h3>
+                <p>Occupied</p>
+            </div>
+            <div class="stat-box rate">
+                <h3>62.5%</h3>
+                <p>Occupancy Rate</p>
+            </div>
+        </div>
+        <section class="card">
+            <h3>Add New Ward</h3>
+            <div class="form-grid">
+            <div>
+                <label>Ward Name</label>
+                <input type="text" placeholder="e.g.,ICU">
+            </div>
+            <div>
+                <label>Ward Code</label>
+                <input type="text" placeholder="e.g.,ICU-001">
+            </div>
+            <div>
+                <label>Number of Beds</label>
+                <input type="number" placeholder="10">
+            </div>
+            <div class="form-actions">
+                <button class="btn success">Create Ward</button>
+            </div>
+        </div>
+        </section>
+        <section class="card">
+            <h3>Existing Wards</h3>
+            <div class="ward-list">
+                    <h4>ICU Ward</h4>
+                    <p>Total Beds: 6 | Available: 2 | occupied: 4</p>
+                    <div class="action-buttons">
+                        <button class="button info" data-target="view1">View</button>
+                        <button class="button " data-target="edit1">Edit</button>
+                        <button class="button danger" data-target="delete1">Delete</button>
+                    </div>
+                    <!--Hidden View Section-->
+                    <div id ="view1" class="hidden ward-section">
+                        <div class="info-box">
+                            <h4>Ward details</h4>
+                            <p><strong>Name:</strong>ICU Ward</p>
+                            <p><strong>Code:</strong>ICU1</p>
+                            <p><strong>Total Beds:</strong>6</p>
+                            <p><strong>Available:</strong>2</p>
+                            <p><strong>occupied:</strong>4</p>
+                        </div>
+                    </div>
+                    <!--Hidden Edit-->
+                    <div id ="edit1" class="hidden ward-section">
+                        <div class="card">
+                            <div class="form-grid">
+                                <div><label>Ward Name</label><input type="text" value="ICU Ward"></div>
+                                <div><label>Ward Code</label><input type="text" value="ICU1"></div>
+                                <div><label>Number of Beds</label><input type="number" value="6"></div>
+                                <div class="form-actions">
+                                    <button class="btn success">Save Changes</button>
+                                    <button class="btn">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Hidden Deelete-->
+                    <div id ="delete1" class="hidden ward-section"></div>
+                    <div class="warning-box">
+                        <p> Are you sure you want to delete<strong>ICU ward</strong>? This action cannot be undone.</p>
+                    <div class="form-actions">
+                        <button class="btn danger">Yes, Delete</button>
+                        <button class="btn">Cancel</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--System Settings-->
+        <section class="card">
+            <h3>System Settings</h3>
+            <div class="settings-list">
+                <label><input type="checkbox" checked>Auto-generated bed number</label>
+                <label><input type="checkbox" checked>Enable visitor passcode system</label>
+                <label><input type="checkbox" checked>Require admin approval for new wards</label>
+                <label><input type="checkbox" checked>Send notifications for capacity alerts</label>
+            </div>
+        </section>
+    </body>
+</html>
