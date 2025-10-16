@@ -1,0 +1,161 @@
+.toolbar{
+    background: #fff;
+    padding:1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.subtitle{
+    color:#666;
+    font-size:0.9rem;
+}
+.action-buttons{
+    display:flex;
+    gap:0.5rem;
+}
+.button{
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    border:none;
+    cursor:pointer;
+}
+.button-complete{
+    background: #2563eb;
+    color:white;
+    
+}
+.button-save{
+    background: #e5e7eb;
+    color:#333;
+}
+.button-cancel{
+    background: #dc2626;
+    color:white;
+}
+.button:hover{
+opacity:0.9;
+}
+.container{
+    max-width:900px;
+    margin:2rem auto;
+}
+/* Step IndicatoR*/
+.step-indicator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.step{
+    text-align: center;
+    flex:1;
+    position: relative;
+}
+.circle{
+    width:38px;
+    height:38px;
+    border-radius: 50%;
+    background: #e5e7eb;
+    color:#555;
+    font-weight: bold;
+    line-height: 38px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.step.active .circle{
+    background: #2563eb;
+    color:#fff;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.4);
+}
+.step.completed .circle{
+    background: #22c55e;
+    color:#fff;
+    font-size: 1rem;
+}
+.step span{
+    display: block;
+    margin-top:0.5rem;
+    font-size: 0.9rem;
+    color:#555;
+}
+/* line between circles */
+.line{
+    flex:1;
+    height:3px;
+    background: #ddd;
+    margin:0 5px;
+}
+.step.completed+ .line{
+    background: #22c55e;
+}
+.step.active + .line{
+    background: #2563eb;
+
+}
+/* Card */
+.card{
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.card h3{
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+/* Bed Grid */
+.bed-grid{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    gap:0.75rem;
+    margin-top: 1rem;
+}
+.bed{
+    text-align: center;
+    border: 2px solid #86efac;
+    background: #e7f9ed;
+    border-radius: 6px;
+    padding: 0.75rem;
+    font-size: 0.85rem;
+
+}
+.bed:hover{
+    background: #bbf7d0;
+}
+.selected-bed{
+    margin-top:1rem;
+    background: #f0f9ff;
+    border:1px solid #bae6fd;
+    border-radius:6px;
+    padding:0.75rem;
+}
+/* Form Layout */
+.form-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1rem;
+    margin-bottom: 1rem;
+}
+input, select, textarea{
+    width:100%;
+    padding: 0.6rem;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+.textarea{
+    height:80px;
+
+}
+/* Buttons*/
+.actions{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}

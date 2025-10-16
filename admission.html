@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patient Admission - HBATS</title>
+        <link rel="stylesheet" href="admission.css">
+    </head>
+    <body>
+        <!--Header-->
+        <header class="toolbar">
+            <div>
+                <h2>Patient Admission Form</h2>
+                <p class="subtitle">Complete patient admission and bed assign process</p>
+            </div>
+            <div class="action-buttons">
+                <a href="dashboard.html" class="button secondary small"> Back to Dashboard</a>
+                <a href="login.html" class="button secondary small">Logout</a>
+            </div>
+        </header>
+<!--Main-->
+<main class="container">
+    <!--Step Indicator-->
+    <div class="step-indicator">
+        <div class="step completed">
+        <div class="circle">&#10003;</div>
+         Select Bed
+        </div>
+        <div class="line"></div>
+        <div class="step active">
+            <div class="circle">2</div>
+             Patient Info
+        </div>
+        <div class="line"></div>
+        <div class="step">
+            <div class="circle">3</div>
+            Generate Passcode
+        </div>
+    </div>
+<!--Step 1. Bed Seletion-->
+<section class="card">
+    <h3>Step 1: Select Available Bed</h3>
+    <label for="ward">Filter by Ward:</label>
+    <select id="ward">
+        <option>All Wards</option>
+        <option>ICU</option>
+        <option>General</option>
+        <option>Pediatric</option>
+        <option>Emergency</option>
+        
+    </select>
+    <div class="bed-grid">
+        <div class="bed available">ICU-001</div>
+        <div class="bed available">ICU-002</div>
+        <div class="bed available">ICU-003</div>
+        <div class="bed available">Gen-104</div>
+        <div class="bed available">ICU-005</div>
+        <div class="bed available">Eme-206</div>
+        <div class="bed available">ICU-207</div>
+        <div class="bed available">PED-308</div>
+    </div>
+    <div class="selected-bed">
+        <p><strong>Selected Bed:</strong></p>
+    </div>
+    
+</section>
+<!--Step 2: Patient Info-->
+<section class="card">
+    <h3>Step 2: Patient Information</h3>
+    <form>
+        <div class="form-grid">
+            <div>
+                <label>Patient Name *</label>
+                <input type="text" placeholder="Enter full name">
+            </div>
+            <div>
+                <label>Patient ID</label>
+                <input type="text" placeholder="Auto-generated" disabled>
+            </div>
+            <div>
+                <label>Contact Number</label>
+                <input type="tel" placeholder="Enter your phone number">
+            </div>
+            <div>
+                <label>Emergency Contact</label>
+                <input type="text" placeholder="Emergency Contact number">
+
+            </div>
+        </div>
+                <label>Admission Notes</label>
+                <textarea placeholder="optional"></textarea>
+            
+    </form>
+</section>
+<!--Step 3: Passcode-->
+<section class="card">
+    <h3>
+        Step 3: Generate visitor Passcode
+    </h3>
+    <div class ="form-grid">
+        <div>
+            <label>Passcode Expiry</label>
+            <select>
+                <option>24 Hours</option>
+                <option>48 Hours</option>
+                <option>72 Hours</option>
+                <option>1 Week</option>
+            </select>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" checked>
+            <label>Auto-generate passcode</label>
+        </div>
+    </div>
+</section>
+<!--Buttons-->
+<div class="actions">
+    <button class="button-complete">Complete Admission</button>
+    <button class="button-save">Save as Draft</button>
+    <button class="button-cancel">Cancel</button>
+</div>
+</main>
+    </body>
+</html>
