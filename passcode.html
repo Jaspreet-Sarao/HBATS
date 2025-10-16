@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Passcode Management - HBATS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="passcode-page">
+<header class="toolbar">
+    <h2>Passcode Management</h2>
+    <p class="subtitle">Generate or invalidate visitor passcodes for patients</p>
+</header>
+<main class="container">
+    <!--Search Section-->
+    <section class="card" id="search-section">
+        <h3>Search Patient</h3>
+        <div class="form-group">
+            <label>Search Patient *</label>
+            <input type="text" placeholder="Search by patient name or bed number" required>
+        <button class="btn">Search</button>
+
+        </div>
+    </section>
+    <!--Hidden Deatils-->
+    <section class="card hidden" id="pateint-details">
+        <div class="info-box">
+            <h4> Patient Information</h4>
+            <p><strong>Name:</strong>John</p>
+            <p><strong>Room:</strong>ICU-002</p>
+            <p><strong>Ward:</strong>ICU</p>
+            <p><strong>Admission Date:</strong>2025-10-15</p>
+
+        </div>
+        <div class="warning-box">
+            <h4>Current Passcode Status</h4>
+            <p><strong>Active Passcode:</strong>ABC123XYZ</p>
+            <p><strong>Expires:</strong>2025-10-15 14:20</p>
+            <p><strong>Status:</strong>Active</p>
+        </div>
+        <div class="form-grid">
+            <div class="card">
+                <h4>Generate new passcode</h4>
+                <label> Expiry duration</label>
+            <select>
+                <option>24 Hours</option>
+                <option>48 Hours</option>
+                <option>72 Hours</option>
+                <option>1 Week</option>
+            </select>
+            <button class="btn success">Generate New Passcode</button>
+        </div>
+        <div class="card">
+            <h4>Invaliadte Current passcode</h4>
+            <label>Reason</label>
+        <select>
+            <option>patient request</option>
+            <option>security concern</option>
+            <option>visitor Change</option>
+            <option>1 Week</option>
+        </select>
+        <button class="btn danger">InvalidatePasscode</button>
+    </div>
+            </div>
+        
+    </section>
+</main>
+    </body>
+</html>
+
+      
