@@ -1,0 +1,511 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color:#222;
+    line-height: 1.5;
+}
+h1,h2,h3,h4{
+    color:#111;
+    margin-bottom: 0.5rem;
+}
+.subtitle{
+    font-size: 0.9rem;
+    color:#666;
+}
+a{
+    text-decoration: none;
+    color:#007bff;
+}
+a:hover{
+    text-decoration: underline;
+}
+/* Buttons*/
+.btn, .button{
+    display: inline-block;
+    padding:0.6rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor:pointer;
+    border:none;
+    text-decoration: none;
+}
+.btn:hover, .button:hover{
+    opacity: 0.9;
+}
+btn.primary,.button.primary{
+    background: #2563eb;
+    color:#fff;
+}
+.btn.secondary, .button.secondary{
+    background: #e5e6eb;
+    color:#333;
+}
+btn.danger, .button.danger{
+    background: #dc2626;
+    color:#fff;
+}
+.btn.success{
+    background: #22c55e;
+    color:#fff;
+}
+/* Header */
+.toolbar{
+    background: #fff;
+    padding: 1rem 2 rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.action-buttons{
+    display:flex;
+    gap:0.5rem;
+}
+/*  board Page*/
+.dashboard-page .container{
+    max-width:1200px;
+    margin:2 rem auto;
+    padding: 0 1rem;
+}
+/* Stats */
+.stats-wrapper{
+    display: flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    margin-bottom: 1.5rem;
+}
+.stat-box{
+    flex:1;
+    min-width:180px;
+    background: #fff;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding:1rem;
+
+}
+.stat-box.available{
+    background: #e7f9ed;
+    border-color:#86efac;
+}
+.stat-box.rate{
+    background: #ebf3ff;
+    border-color: #93c5fd;
+}
+/* Filters */
+.filter-panel{
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding:1rem;
+    margin-bottom:1.5rem;
+}
+.filter-panel select, .filter-panel input{
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width:100%;
+}
+/* Wards */
+.dashboard-page .ward-section{
+    background: #fff;
+    border:1px solid #ddd;
+    border-radius: 8px;
+    padding:1.5rem;
+    margin-bottom: 1.5rem;
+
+}
+.dashboard-page .bed-grid, .admission-page .bed-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:0.75 rem;
+    margin-top: 1rem;
+}
+.dashboard-page .bed-available, .admission-page .bed-available{
+    background: #e7f9ed;
+    border:2px solid #86efac;
+    border-radius: 8px;
+    padding: 0.75rem;
+    text-align: center;
+
+}
+.dashboard-page .bed-occupied, .admission-page .bed.bed-occupied{
+    background: #fee2e2;
+    border:2px solid #fca5a5;
+    border-radius: 8px;
+    padding:0.75rem;
+    text-align: center;
+}
+.dashboard-page .bed-id{
+    font-weight: bold;
+}
+.dashboard-page .status-green{
+    color: #15803d;
+    font-weight: 500;
+}
+.dashboard-page .status-red{
+    color:#b91c1c;
+    font-weight: 500;
+
+}
+.dashboard-page .show-link{
+    text-align: center;
+    margin-top: 1rem;
+}
+.dashboard-page .show-link a{
+    color:#333;
+}
+/* Login Page */
+.centered-page{
+    background:#f3f4f6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-card{
+    background:#fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba( 0, 0, 0, 0.1);
+    padding: 2.5rem;
+    width: 350px;
+    text-align: center;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.login-form input{
+    padding:0.6rem;
+    border:1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+.login-form input:focus{
+    border-color: #007bff;
+    outline:none;
+}
+.form-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size:0.85rem;
+}
+.footer-link{
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+/* Visitor Lookup Page */
+.lookup-wrapper{
+    width:100%;
+    max-width: 420px;
+    padding: 1rem;
+    margin:auto;
+}
+.lookup-card{
+    background: #fff;
+    border:1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.lookup-card input{
+    width:100%;
+    padding: 0.7rem;
+    border:1px solid #ccc;
+    border-radius: 6px;
+}
+.lookup-result, .error-box{
+    display: none;
+    border-radius: 8px;
+    padding:1rem;
+    margin-top: 1.5rem;
+}
+.lookup-result{
+    background: #e7f9ed;
+    border: 1px solid #86efac;
+
+}
+.error-box{
+    background: #fee2e2;
+    border: 1px solid #fca5a5;
+}
+.visitor-page form{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.visitor-page .form-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.visitor-page .button-find-room{
+    align-self: center;
+    width:100%;
+    margin-top: 0.5rem;
+    background: #000;
+    color:#fff;
+    border:none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    cursor:pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.visitor-page .button-find-room:hover{
+    background: #333;
+}
+/* Admission Page */
+.step-indicator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.step{
+    text-align: center;
+    flex:1;
+
+}
+.circle{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #e5e7eb;
+    color:#555;
+    font-weight: bold;
+    line-height: 38px;
+    margin: 0 auto 0.5rem;
+}
+.step.active .circle{
+    background: #2563eb;
+    color: #fff;
+}
+.step.completed.circle{
+    background: #22c55e;
+    color:#fff;
+
+}
+.line{
+    flex:1;
+    height:3px;
+    background: #ddd;
+    margin: 0 5px;
+
+}
+.step.step.completed + .line{
+    background: #22c55e;
+
+}
+/* Form */
+.form-grid{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+input, select, textarea{
+    width:100%;
+    padding: 0.6rem;
+    border:1px solid #ccc;
+    border-radius: 6px;
+}
+textarea{
+    height: 80px;
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+/* Discharge Page */
+.info-box{
+    background: #e7f9ed;
+    border-left: 4px solid #22c55e;
+    border-radius: 6px;
+    padding:1rem;
+    margin-bottom: 1rem;
+}
+.warning-box{
+    background: #fff8e1;
+ border-left: 4px solid #ffc107;
+ border-radius:6px;
+padding:1rem;
+margin-bottom: 1rem;
+}
+/* Passcode Management */
+.passcode-page .card, .admission-page .card{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+
+.passcode-page header.toolbar{
+    flex-direction: column;
+    align-items: flex-start;
+    gap:0.3rem;
+    padding: 1rem 2rem;
+}
+.passcode-page .form-group{
+    display: flex;
+    align-items: center;
+    gap:0.8rem;
+}
+.passcode-page .form-group input[type="text"]{
+    flex:1;
+    padding: 0.7rem;
+}
+.passcode-page .form-group .btn{
+    padding: 0.75rem 1.5rem;
+}
+.container{
+    margin-top: 2rem;
+    .toolbar{
+        justify-content:space-between;
+        align-items: center;
+    }
+}
+/* Admin Page */
+.ward-item, .settings-list{
+    margin-top: 1rem;
+}
+.settings-list{
+    display: grid;
+    gap:0.8rem;
+}
+.settings-list label{
+display:flex;
+align-items: center;
+gap:0.5rem;
+font-weight: 500;
+}
+.admin-page .container{
+    max-width: 1100;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.admin-page .card{
+    background: #fff;
+    border:1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba( 0, 0, 0, 0.05);
+}
+.admin-page .ward-item{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
+}
+.admin-page .action-buttons{
+    display: flex;
+    gap:0.5rem;
+    margin-top: 0.5rem;
+}
+.admin-page .action-buttons .button{
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size:0.85rem;
+    text-decoration: none;
+    border:none;
+}
+.admin-page .button.info{
+    background: #0d6efd;
+    color:#fff;
+
+}
+.admin-page .button.danger{
+    background: #dc2626;
+    color:#fff;
+}
+.admin-page .button:hover{
+    opacity: 0.9;
+}
+.admin-page .info-box{
+    background: #e7f9ed;
+    border-left: 5px solid #22c55e;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top:1rem;
+}
+.admin-page .warning-box{
+    background: #fff8e1;
+    border-left:5px solid #ffc107;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top:1rem;
+    display: none;
+}
+.admin-page .settings-list{
+    display: flex;
+    flex-direction: column;
+    gap:0.8rem;
+    margin-top: 1rem;
+    padding-left:0.5rem;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.admin-page .settings-list label{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color:#333;
+}
+.admin-page .toolbar h2{
+    margin: 0;
+    font-size: 1.5rem;
+    color: #111;
+    line-height: 1.2;
+}
+.admin-page .toolbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+.admin-page .form-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1rem;
+    align-items: end;
+}
+.admin-page.form-actions{
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+.hidden
+{
+    display: none;
+}
+.card .form-group{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.card .form-group input[type="text"]{
+    flex:1;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius:6px;
+}
