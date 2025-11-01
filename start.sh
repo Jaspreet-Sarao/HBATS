@@ -1,11 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
-# run migrations
+echo "Running migrations and seeds..."
 php artisan migrate --force
+php artisan db:seed --force
 
-# seed
-php artisan db:seed
-
-# start apache (change this if your image uses something else)
+echo "Starting Apache..."
 apache2-foreground
